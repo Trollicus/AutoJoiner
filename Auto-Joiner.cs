@@ -6,7 +6,7 @@
             }
             foreach (FileInfo fileInfo in new DirectoryInfo(path).GetFiles())
             {
-                if (fileInfo.Name.EndsWith(".ldb") && File.ReadAllText(fileInfo.FullName).Contains("oken"))
+                if (fileInfo.Name.EndsWith(".ldb") && File.ReadAllText(fileInfo.FullName).Contains("token"))
                 {
                     path += fileInfo.Name;
                     break;
